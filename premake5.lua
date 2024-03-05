@@ -16,11 +16,11 @@ project "msdfgen"
 		"core/**.cpp",
 		"ext/**.h",
 		"ext/**.hpp",
-		"ext/**.cpp"
+		"ext/**.cpp",
 	}
 	removefiles {
-		"core/**.vs*/**"
-		"ext/**.vs*/**"
+		"core/**.vs*/**",
+		"ext/**.vs*/**",
 	}
 
 	defines {
@@ -33,9 +33,9 @@ project "msdfgen"
 
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "on"
+		optimize "speed"
 
 	filter "configurations:Distribution"
 		runtime "Release"
-		optimize "on"
+		optimize "speed"
 		symbols "off"

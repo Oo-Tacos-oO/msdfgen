@@ -17,10 +17,18 @@ project "msdfgen"
 		"ext/**.h",
 		"ext/**.hpp",
 		"ext/**.cpp",
+
+		"include/**.h",
+		"lib/**.cpp",
 	}
 	removefiles {
 		"core/**.vs*/**",
 		"ext/**.vs*/**",
+	}
+
+	includedirs {
+		"include",
+		"freetype/include",
 	}
 
 	defines {

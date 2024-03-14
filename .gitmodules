@@ -1,0 +1,6 @@
+[submodule "freetype"]
+	path = freetype
+	url = https://github.com/freetype/freetype.git
+[submodule "tinyxml2"]
+	path = tinyxml2
+	url = https://github.com/leethomason/tinyxml2.git

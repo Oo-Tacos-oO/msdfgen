@@ -20,6 +20,9 @@ project "msdfgen"
 
 		"include/**.h",
 		"lib/**.cpp",
+
+		"tinyxml2/tinyxml2.h",
+		"tinyxml2/tinyxml2.cpp",
 	}
 	removefiles {
 		"core/**.vs*/**",
@@ -29,10 +32,12 @@ project "msdfgen"
 	includedirs {
 		"include",
 		"freetype/include",
+		"tinyxml2",
 	}
 
 	defines {
 		"MSDFGEN_USE_CPP11",
+		"MSDFGEN_PUBLIC=",
 	}
 
 	filter "configurations:Debug"
